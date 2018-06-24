@@ -1,0 +1,197 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Mel
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* reset base font size*/
+html {
+font-size:62.5%;
+}
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  height: 500px;
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  margin: 0 auto;
+  padding: 20px 80px;
+  height: 450px;
+  position: relative;
+  background-color: #033048;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  opacity: 0.1;
+  z-index:auto;
+}
+
+h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: white;
+  font-weight 600;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  padding: 40px;
+  top: 50px;
+  text-align: center;
+}
+
+/*h3 {
+  background-color: #f9e42e;
+  border-radius: 5px;
+  color: #033048;
+  font-weight: 600;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 auto;
+  text-align: center;
+  width: 140px;
+}*/
+
+h4 {
+  color: #033048;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/*h5 {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+}*/
+
+/*h6 {
+  background-color: #033048;
+  border-radius: 3px;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+  height: 30px;
+  width: 150px;
+
+}*/
+
+/*p, ul {
+  color: #606161;
+  font-weight: 300;
+  font-size: 14px;
+}*/
+
+/*p {
+  margin-bottom: 14px;
+}*/
+
+/*ul {
+  list-style-type: disc;
+  line-height: 22px
+}*/
+
+/*main {
+  background-color: #f0efef;
+  height: 615px;
+  margin: 0;
+  padding: 50px 80px;
+  height: auto;
+}*/
+
+section {
+  margin: 0 auto;
+  max-width: 32rem;
+  background-color: #f0efef;
+}
+
+/*#testimonial {
+  background-image: url(../images/testimonial_bg.jpg);
+  background-size: cover;
+  padding: 40px 30% 40px 30%;
+}*/
+
+/*#name {
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+/*#yellowbar {
+  background-color: #f9e42e;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}*/
+
+/*#yellowlogo {
+  color: #f9e42e;
+  margin: 0;
+  text-align: center;
+}*/
+
+/*#social {
+  display: flex;
+  justify-content: center;
+}*/
+
+/*img {
+  margin: 20px;
+}*/
+
+/*#copyright {
+  font-size: 9px;
+  color: white;
+  text-align: center;
+  margin: 30px;
+}*/
+
+/*footer {
+  background-color: #121212;
+  padding: 0 0 20px 0;
+}*/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

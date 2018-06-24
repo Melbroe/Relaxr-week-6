@@ -1,0 +1,292 @@
+/*
+Project Name: Relaxr
+Client: GA
+Author: Mel
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* reset base font size*/
+html {
+font-size:62.5%;
+}
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+img {
+  height:100%;
+  width:auto;
+}
+ul {
+  line-height: 22px;
+
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 2.1rem 2rem 0rem 4rem;
+  align-self:flex-start;
+
+}
+
+p, ul {
+  font-weight: 300;
+  font-size:1.3rem;
+  margin: 1rem 2rem 0rem 4rem;
+  max-width:310px;
+  align-self:flex-start;
+}
+
+li {
+  max-width:200px;
+}
+.button {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  border-radius:.2rem;
+  padding:.6rem 3rem .6rem 3rem;
+  background-color: #f9e42e;
+  color:black;
+
+}
+
+blockquote {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color:white;
+  align-self:center;
+  width:37rem;
+  opacity: 0.7;
+  text-align: center;
+  padding:inherit;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  margin: auto;
+  width: 100%;
+  height:auto; /*does this do anything?*/
+}
+
+
+/*flex parent item*/
+
+#flexsetup {
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding: 1rem 5% 1rem 5%; /* percentage padding around the div--*/
+background-color: #D3D3D3;
+}
+
+
+/**************************/
+/*header is also a flex parent*/
+header {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto;
+  padding: 1rem .5rem 15rem .5rem;
+  width:100%;
+  background-color: #033048;
+  background: url(../images/header_bg.jpg) no-repeat center top;
+  background-size: cover;
+  z-index:1;
+}
+
+header h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 2.4rem;
+    margin: 1.4rem 2rem 0rem 4rem;
+  align-self: flex-start;
+  width:100%;
+}
+
+header h2 {
+  color: white;
+  font-weight 600;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  padding: 40px;
+  top: 50px;
+  align-self: flex-end;
+}
+
+header a {
+  align-self:center;
+}
+
+/************************ section ******************/
+ section {
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   background-color: #f0efef;
+   width:100%;
+   background-image: image(/images/testimonial_bg.jpg);
+   padding-bottom: 3rem;
+ }
+ section ul {
+list-style-type:initial;
+margin-left: 10rem;
+ }
+
+
+/************************ testimonial section ******************/
+#testimonial {
+  display:flex;
+  flex-direction:column;
+  background-image: url(../images/testimonial_bg.jpg);
+  background-size: cover;
+  width:100%;
+  padding: inherit;
+}
+
+#testimonial p {
+  align-self: center;
+  font-style:normal;
+  font-weight:400px;
+  font-size:1.8rem;
+
+  margin: 1rem 2rem 0rem 2rem;
+
+}
+/************************ aside section ******************/
+aside {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #f9e42e;
+  width:100%;
+
+}
+aside .button {
+  font-size: 1.2rem;
+  background:#033048;
+  color:white;
+  align-self:center;
+  margin: 1rem 0 1rem 0;
+  border-radius:.2rem;
+
+
+}
+
+/************************ footer section ******************/
+footer {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  background-color: #121212;
+  padding: 2rem 0 2rem 0;
+}
+
+footer h3 {
+  align-self:center;
+  color:#f9e42e;
+  font-size:2.4rem;
+  font-weight:800;
+  padding:inherit;
+
+}
+
+footer p {
+  color:white;
+  align-self:center;
+  font-size:0.9rem;
+}
+
+footer img {
+  height:1.2rem;
+  width:auto;
+  padding:0;
+  margin:0;
+}
+
+nav ul {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:center;
+  width:inherit;
+  height:auto;
+  max-width:100%;
+  margin:1rem 0;
+}
+nav ul li {
+    padding:0 1rem 0 1rem;
+    margin:0;
+
+}
+
+
+/*------------------  media queries --------------------*/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 321px) and (max-width: 568px) {
+  header {
+
+    padding: 1rem .5rem 5rem .5rem;
+
+  }
+
+  header>h1 {
+    color:red;
+    font-size: 2.4rem;
+      margin: 1.4rem 2rem 0rem 1rem;
+    align-self: flex-start;
+    width:100%;
+  }
+
+
+  header h2 {
+
+    padding: 20px;
+
+  }
+
+  blockquote {
+
+    width:100%;
+
+  }
+
+}
